@@ -1,0 +1,4 @@
+dbpath = /etc/postfix/rybalkin.org.sqlite3
+table = forwardings
+select_field = destination
+where_field = source

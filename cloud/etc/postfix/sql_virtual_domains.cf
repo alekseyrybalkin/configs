@@ -1,0 +1,4 @@
+dbpath=/etc/postfix/rybalkin.org.sqlite3
+table = domains
+select_field = 'virtual'
+where_field = domain

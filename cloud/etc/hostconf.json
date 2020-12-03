@@ -1,0 +1,10 @@
+{
+    "kernel": "cloud",
+    "configs": "cloud",
+    "configs_after_install": [
+        "cloud-gendomains",
+        "python -m mr.util.arch_addons",
+        "systemctl daemon-reload"
+    ],
+    "firewall_manager": "aleksey"
+}

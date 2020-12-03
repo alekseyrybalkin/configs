@@ -1,0 +1,9 @@
+[Unit]
+Description=hckrnews-update
+
+[Service]
+Type=oneshot
+User=rybalkin
+Group=rybalkin
+Environment=https_proxy=http://127.0.0.1:8118
+ExecStart=/usr/bin/python /usr/bin/hckrnews update

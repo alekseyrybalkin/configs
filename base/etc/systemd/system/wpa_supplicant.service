@@ -1,0 +1,12 @@
+[Unit]
+Description=wpa_supplicant
+After=network.target
+
+[Service]
+Type=forking
+EnvironmentFile=/run/internet-environment
+ExecStart=/usr/bin/wpa_supplicant -B -D nl80211,wext -i ${WIFI_DEVICE} -c /run/wpa_supplicant.conf
+ExecStop=/usr/bin/killall -q wpa_supplicant
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+# <file system>                     <dir>               <type>      <options>                                                               <dump> <pass>
+/dev/mapper/root                    /                   ext4        rw,relatime                                                                 0   1
+/var/.swapfile                      none                swap        defaults                                                                    0   0
+
+/home                               /.arch/home         none        defaults,noauto,bind                                                        0   0
+/boot                               /.arch/boot         none        defaults,noauto,bind                                                        0   0
+/dev                                /.arch/dev          none        defaults,noauto,bind                                                        0   0
+/dev/pts                            /.arch/dev/pts      devpts      defaults,noauto,bind                                                        0   0
+/dev/shm                            /.arch/dev/shm      tmpfs       defaults,noauto,bind                                                        0   0
+/proc                               /.arch/proc         proc        defaults,noauto,bind                                                        0   0
+/sys                                /.arch/sys          sysfs       defaults,noauto,bind                                                        0   0
+/run                                /.arch/run          none        defaults,noauto,bind                                                        0   0
+
+/dev/sdb1                           /mnt/sdb1           vfat        defaults,user,noauto,nosuid,noexec,nodev,flush,fmask=0137,iocharset=utf8    0   0
+/dev/mapper/seagate                 /mnt/seagate        ext4        defaults,user,noauto,nosuid,noexec,nodev,noatime                            0   0

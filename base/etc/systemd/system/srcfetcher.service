@@ -1,0 +1,8 @@
+[Unit]
+Description=srcfetcher
+
+[Service]
+Type=oneshot
+User=rybalkin
+Group=rybalkin
+ExecStart=/usr/bin/python /usr/bin/srcfetcher --quiet

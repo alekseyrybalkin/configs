@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ "${1}" == "install" ]; then
+    for confdir in $(hostconf configs); do
+        for dir in etc usr; do
+            if [ -d "${confdir}/${dir}" ]; then
+                cp -a ${confdir}/${dir} ${2}/
+            fi
+        done
+    done
+    cd ${2}
+    hostconf configs_install | while read cmd; do
+        ${cmd}
+    done
+fi

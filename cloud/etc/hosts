@@ -1,0 +1,9 @@
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+#<ip-address>	<hostname.domain.org>	<hostname>
+127.0.0.1	localhost.localdomain	localhost
+172.104.225.107 rybalkin.org
+::1		localhost.localdomain	localhost   rybalkin.org
+
+209.51.188.201 git.savannah.gnu.org
+209.51.188.201 vcs-default.savannah.gnu.org

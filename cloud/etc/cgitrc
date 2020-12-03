@@ -1,0 +1,40 @@
+#
+# cgit config
+#
+
+css=/cgit.css
+logo=/cgit.png
+
+root-title=git.rybalkin.org
+root-desc=personal projects of Aleksey Rybalkin
+
+# if you do not want that webcrawler (like google) index your site
+robots=noindex, nofollow
+
+# if cgit messes up links, use a virtual-root. For example has cgit.example.org/ this value:
+virtual-root=/
+
+#
+# List of repositories.
+# This list could be kept in a different file (e.g. '/etc/cgitrepos')
+# and included like this:
+#   include=/etc/cgitrepos
+#
+
+#repo.url=grokdnd
+#repo.path=/srv/publicgit/grokdnd
+#repo.desc=Dungeon Masters Toolkit (D&D 4)
+
+# For a non-bare repository
+#repo.url=MyOtherRepo
+#repo.path=/srv/git/MyOtherRepo/.git
+#repo.desc=That's my other git repository
+
+section-from-path=1
+clone-url=git://rybalkin.org/$CGIT_REPO_URL aleksey@rybalkin.org:/srv/publicgit/$CGIT_REPO_URL
+#source-filter=/usr/lib/cgit/filters/syntax-highlighting.py
+enable-git-config=1
+enable-index-links=1
+scan-path=/srv/publicgit/
+
+footer=/dev/null

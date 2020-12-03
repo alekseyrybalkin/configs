@@ -1,0 +1,16 @@
+{
+    "kernel": "potato",
+    "chroot": "arch",
+    "chroot_killall": "gpg-agent scdaemon xclip",
+    "chroot_extra_mount": "/home /boot",
+    "configs": "base",
+    "configs_install": [
+        "chmod 440 etc/sudoers",
+        "chmod 600 etc/crypttab"
+    ],
+    "configs_after_install": [
+        "domains --no-remote",
+        "systemctl daemon-reload"
+    ],
+    "firewall_manager": "rybalkin"
+}

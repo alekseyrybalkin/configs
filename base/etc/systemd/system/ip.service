@@ -1,0 +1,13 @@
+[Unit]
+Description=ip
+After=network.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/run/internet-environment
+ExecStart=/usr/bin/ip link set ${WIFI_DEVICE} up
+RemainAfterExit=yes
+ExecStop=/usr/bin/ip link set ${WIFI_DEVICE} down
+
+[Install]
+WantedBy=multi-user.target

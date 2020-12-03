@@ -1,0 +1,12 @@
+[Unit]
+Description=dhcpcd
+After=network.target
+
+[Service]
+Type=forking
+EnvironmentFile=/run/internet-environment
+ExecStart=-/usr/bin/dhcpcd ${WIFI_DEVICE}
+ExecStop=/usr/bin/dhcpcd -k ${WIFI_DEVICE}
+
+[Install]
+WantedBy=multi-user.target

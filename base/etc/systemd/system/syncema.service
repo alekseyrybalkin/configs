@@ -1,0 +1,8 @@
+[Unit]
+Description=syncema
+
+[Service]
+Type=oneshot
+User=rybalkin
+Group=rybalkin
+ExecStart=/usr/bin/python -m mr.syncema

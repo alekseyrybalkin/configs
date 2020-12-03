@@ -1,0 +1,13 @@
+[Unit]
+Description=ip-wired
+After=network.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/run/internet-environment
+ExecStart=/usr/bin/ip link set ${WIRED_DEVICE} up
+RemainAfterExit=yes
+ExecStop=/usr/bin/ip link set ${WIRED_DEVICE} down
+
+[Install]
+WantedBy=multi-user.target

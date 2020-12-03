@@ -1,0 +1,16 @@
+{
+    "kernel": "tomato",
+    "chroot": "base",
+    "chroot_killall": "gpg-agent scdaemon xclip",
+    "configs": "base chroot",
+    "configs_install": [
+        "chmod 440 etc/sudoers",
+        "chmod 600 etc/crypttab"
+    ],
+    "configs_after_install": [
+        "domains --no-remote",
+        "python -m mr.util.arch_addons",
+        "systemctl daemon-reload"
+    ],
+    "firewall_manager": "rybalkin"
+}

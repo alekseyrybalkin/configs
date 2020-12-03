@@ -1,0 +1,12 @@
+[Unit]
+Description=dhcpcd-wired
+After=network.target
+
+[Service]
+Type=forking
+EnvironmentFile=/run/internet-environment
+ExecStart=-/usr/bin/dhcpcd ${WIRED_DEVICE}
+ExecStop=/usr/bin/dhcpcd -k ${WIRED_DEVICE}
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,16 @@
+[Unit]
+Description=gitdaemon
+After=network.target
+
+[Service]
+PIDFile=/run/gitdaemon/pid
+User=gitdaemon
+Group=gitdaemon
+WorkingDirectory=/srv/publicgit
+ExecStart=/usr/bin/git daemon --reuseaddr --base-path=. --export-all --verbose --listen=172.104.225.107 --pid-file=/run/gitdaemon/pid
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

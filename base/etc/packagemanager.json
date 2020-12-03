@@ -1,0 +1,85 @@
+{
+    "exe": "packmgr",
+    "lockfile": "/run/packmgr.lock",
+    "users": {
+        "root": {
+            "name": "root",
+            "uid": 0,
+            "gid": 0,
+            "umask": 18
+        },
+        "manager": {
+            "name": "rybalkin",
+            "uid": 1000,
+            "gid": 1000,
+            "umask": 23
+        },
+        "worker": {
+            "name": "housecarl",
+            "uid": 1100,
+            "gid": 1000,
+            "umask": 18
+        }
+    },
+    "db_path": "/var/lib/packages/packages.db",
+    "repo_path": "/home/rybalkin/projects/packages",
+    "sources_path": "/home/rybalkin/.data/sources",
+    "tarballs_path": "/home/rybalkin/.data/sources/_ignore/tarballs",
+    "data_path": "/var/lib/packages",
+    "env": {
+        "CFLAGS": "-march=native -O2 -pipe",
+        "CXXFLAGS": "-march=native -O2 -pipe",
+        "MAKEFLAGS": "-j5",
+        "PKG_CONFIG": "/usr/bin/pkg-config",
+        "PKG_CONFIG_PATH": "/usr/lib/pkgconfig"
+    },
+    "readelf_skip_extensions": [
+        "png",
+        "h",
+        "hpp",
+        "html",
+        "py",
+        "pyc",
+        "pyo",
+        "mo",
+        "xml",
+        "htm",
+        "jar",
+        "txt",
+        "svg",
+        "3ssl",
+        "vim",
+        "gz",
+        "idl",
+        "pm",
+        "rst",
+        "js",
+        "gif",
+        "cmake"
+    ],
+    "buildorder_exceptions": [
+        ["binutils", "gcc"],
+        ["freetype", "harfbuzz"],
+        ["gmp", "gcc"],
+        ["harfbuzz", "cairo"],
+        ["python", "libx11"],
+        ["python", "tk"],
+        ["util-linux", "systemd"]
+    ],
+    "worker_cleanups": [
+        ".cache",
+        ".cmake",
+        ".java",
+        ".npm",
+        ".config/configstore",
+        ".cargo",
+        ".fontconfig",
+        ".local"
+    ],
+    "integrity_checks": {
+        "untracked": true,
+        "empty_folders": true,
+        "tarballs": true,
+        "buildorder_extras": true
+    }
+}

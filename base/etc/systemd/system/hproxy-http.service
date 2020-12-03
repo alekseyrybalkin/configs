@@ -1,0 +1,14 @@
+[Unit]
+Description=hproxy-http
+After=network.target
+
+[Service]
+Type=simple
+User=rybalkin
+Group=rybalkin
+WorkingDirectory=/home/rybalkin
+ExecStart=/usr/bin/ssh -N -L 7117:localhost:7117 aleksey@rybalkin.org
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

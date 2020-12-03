@@ -1,0 +1,4 @@
+dbpath=/etc/postfix/rybalkin.org.sqlite3
+table = users
+select_field = domain||'/'||email||'/'
+where_field = email

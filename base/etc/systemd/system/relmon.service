@@ -1,0 +1,8 @@
+[Unit]
+Description=relmon
+
+[Service]
+Type=oneshot
+User=rybalkin
+Group=rybalkin
+ExecStart=/usr/bin/python /usr/bin/relmon --update

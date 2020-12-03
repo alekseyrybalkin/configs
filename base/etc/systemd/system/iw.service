@@ -1,0 +1,13 @@
+[Unit]
+Description=iw
+After=network.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/run/internet-environment
+ExecStart=/usr/bin/iw dev ${WIFI_DEVICE} connect "${SSID}"
+RemainAfterExit=yes
+ExecStop=/usr/bin/iw dev ${WIFI_DEVICE} disconnect
+
+[Install]
+WantedBy=multi-user.target

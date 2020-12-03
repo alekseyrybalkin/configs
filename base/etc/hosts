@@ -1,0 +1,14 @@
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+
+127.0.0.1   localhost.localdomain   localhost   base
+::1         localhost.localdomain   localhost   base
+
+172.104.225.107     rybalkin.org
+172.104.225.107     dnd.rybalkin.org
+172.104.225.107     git.rybalkin.org
+172.104.225.107     dev1.rybalkin.org
+172.104.225.107     dev2.rybalkin.org
+172.104.225.107     mail.rybalkin.org
+127.0.0.1   rybalkin.ooo
+127.0.0.1   finermail.ooo

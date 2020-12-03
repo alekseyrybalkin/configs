@@ -1,0 +1,9 @@
+[Unit]
+Description=syncema
+
+[Timer]
+OnCalendar=*-*-* *:*:10,40
+Persistent=true
+
+[Install]
+WantedBy=timers.target
