@@ -454,8 +454,7 @@
 # https://yaml.org/
 --type-add=yaml:ext:yaml,yml
 
-# .ccache and .data
---ignore-directory=is:.ccache
+# .data
 --ignore-directory=is:.data
 
 # archives
