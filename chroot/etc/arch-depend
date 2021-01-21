@@ -106,6 +106,7 @@ depend = libva-intel-driver
 depend = ccache
 depend = nginx-mainline
 depend = python-bottle
+depend = python-defusedxml
 
 # telenoti deps
 depend = python-pysocks

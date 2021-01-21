@@ -66,6 +66,7 @@ depend = ldns
 # dev
 depend = nginx-mainline
 depend = python-bottle
+depend = python-defusedxml
 
 # arch-specific
 depend = pacman
