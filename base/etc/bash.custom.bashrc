@@ -35,6 +35,7 @@ if [ "${USER}" == "rybalkin" ]; then
     alias postbackup="sudo systemctl start hproxy-http syncema.timer srcfetcher.timer hckrnews-update.timer relmon.timer"
     alias encri="gpg --batch -c --passphrase-fd 3 3<${PASSPHRASE_FILE}"
     alias decri="gpg --batch --passphrase-fd 3 3<${PASSPHRASE_FILE}"
+    alias news="ssh ${CLOUD} python -m mr.rss"
 
     function seagate_mount() {
         sudo cryptsetup --key-file=/home/rybalkin/.data/secrets/seagate.key open /dev/sdb1 seagate
