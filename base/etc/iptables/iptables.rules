@@ -19,7 +19,4 @@
 -A OUTPUT -o lo -m owner --uid-owner 1103 -j ACCEPT
 -A OUTPUT -d 127.0.0.0/24 -m owner --uid-owner 1103 -j ACCEPT
 -A OUTPUT -o + -m owner --uid-owner 1103 -j DROP
--A OUTPUT -o lo -m owner --uid-owner 1104 -j ACCEPT
--A OUTPUT -d 127.0.0.0/24 -m owner --uid-owner 1104 -j ACCEPT
--A OUTPUT -o + -m owner --uid-owner 1104 -j DROP
 COMMIT
