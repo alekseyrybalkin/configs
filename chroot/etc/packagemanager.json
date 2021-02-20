@@ -1,6 +1,7 @@
 {
     "exe": "packmgr",
     "lockfile": "/run/packmgr.lock",
+    "temp_dir_for_upgrades": "/root",
     "users": {
         "root": {
             "name": "root",
