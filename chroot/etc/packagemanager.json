@@ -75,6 +75,5 @@
         "empty_folders": false,
         "tarballs": false,
         "buildorder_extras": false
-    },
-    "force_root_ownership": true
+    }
 }
