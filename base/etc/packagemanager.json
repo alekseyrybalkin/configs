@@ -63,8 +63,6 @@
         ["freetype", "harfbuzz"],
         ["gmp", "gcc"],
         ["harfbuzz", "cairo"],
-        ["python", "libx11"],
-        ["python", "tk"],
         ["util-linux", "systemd"]
     ],
     "worker_cleanups": [

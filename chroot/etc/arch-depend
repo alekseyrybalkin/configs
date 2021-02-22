@@ -99,7 +99,6 @@ depend = xorg-server
 depend = xorg-xinit
 depend = xorg-xinput
 depend = youtube-dl
-depend = tk
 depend = libva-intel-driver
 
 # dev
