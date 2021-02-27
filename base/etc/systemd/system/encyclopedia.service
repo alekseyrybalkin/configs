@@ -1,0 +1,11 @@
+[Unit]
+Description=encyclopedia
+
+[Service]
+User=rybalkin
+Group=rybalkin
+ExecStart=/usr/bin/python -m mr.encyclopedia.main
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
