@@ -104,6 +104,7 @@ depend = libva-intel-driver
 # dev
 depend = ccache
 depend = nginx-mainline
+depend = python-whoosh
 depend = python-bottle
 depend = python-defusedxml
 
