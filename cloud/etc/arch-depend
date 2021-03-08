@@ -79,6 +79,7 @@ depend = cgit
 depend = fcgiwrap
 depend = dovecot
 depend = postfix
+depend = postfix-sqlite
 depend = s-nail
 depend = procmail
 depend = opendkim
