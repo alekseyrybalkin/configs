@@ -107,7 +107,6 @@ depend = nginx-mainline
 depend = python-whoosh
 depend = python-bottle
 depend = python-defusedxml
-depend = python-prompt_toolkit
 
 # telenoti deps
 depend = python-pysocks
