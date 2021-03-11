@@ -9,7 +9,7 @@
         "chmod 600 etc/crypttab"
     ],
     "configs_after_install": [
-        "domains --no-remote",
+        "firewall --no-remote",
         "systemctl daemon-reload"
     ],
     "firewall_manager": "rybalkin"

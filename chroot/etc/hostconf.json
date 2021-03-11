@@ -8,7 +8,7 @@
         "chmod 600 etc/crypttab"
     ],
     "configs_after_install": [
-        "domains --no-remote",
+        "firewall --no-remote",
         "python -m mr.util.arch_addons",
         "systemctl daemon-reload"
     ],
