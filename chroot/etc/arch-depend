@@ -106,7 +106,6 @@ depend = ccache
 depend = nginx-mainline
 depend = python-whoosh
 depend = python-bottle
-depend = python-defusedxml
 
 # telenoti deps
 depend = python-pysocks
