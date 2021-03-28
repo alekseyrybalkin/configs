@@ -100,6 +100,8 @@ depend = xorg-xinit
 depend = xorg-xinput
 depend = youtube-dl
 depend = libva-intel-driver
+depend = sway
+depend = webkit2gtk
 
 # dev
 depend = ccache
