@@ -101,6 +101,7 @@ depend = xorg-xinput
 depend = youtube-dl
 depend = libva-intel-driver
 depend = sway
+depend = wl-clipboard
 depend = webkit2gtk
 
 # dev
