@@ -1,4 +1,3 @@
-export TOUCHPAD_DEVICE="SynPS/2 Synaptics TouchPad"
 export WIFI_DEVICE=wlp3s0
 export WIRED_DEVICE=enp0s25
 
