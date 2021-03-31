@@ -74,6 +74,10 @@ depend = cpio
 # for building device-mapper
 depend = libaio
 
+# for building tllist, fcft and foot
+depend = meson
+depend = scdoc
+
 # used directly
 depend = ttf-ubuntu-font-family
 depend = ttf-dejavu
@@ -103,6 +107,8 @@ depend = libva-intel-driver
 depend = sway
 depend = wl-clipboard
 depend = webkit2gtk
+depend = swayidle
+depend = swaylock
 
 # dev
 depend = ccache
