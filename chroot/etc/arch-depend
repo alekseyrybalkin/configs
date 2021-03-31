@@ -122,13 +122,6 @@ depend = python-pyasn1
 depend = python-rsa
 depend = python-pyaes
 
-# palemoon build deps
-depend = autoconf2.13
-depend = yasm
-depend = python2
-depend = zip
-depend = gtk2
-
 # arch-specific
 depend = pacman
 depend = iputils
