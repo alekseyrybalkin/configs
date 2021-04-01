@@ -128,3 +128,4 @@ depend = iputils
 depend = licenses
 depend = logrotate
 depend = libreoffice-fresh
+depend = chromium
