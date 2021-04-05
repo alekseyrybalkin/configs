@@ -62,7 +62,6 @@
         ["binutils", "gcc"],
         ["freetype", "harfbuzz"],
         ["gmp", "gcc"],
-        ["harfbuzz", "cairo"],
         ["util-linux", "systemd"]
     ],
     "worker_cleanups": [
