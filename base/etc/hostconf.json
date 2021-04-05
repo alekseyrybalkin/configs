@@ -1,7 +1,7 @@
 {
     "kernel": "potato",
     "chroot": "arch",
-    "chroot_killall": "gpg-agent scdaemon xclip wl-copy",
+    "chroot_killall": "gpg-agent scdaemon wl-copy",
     "chroot_extra_mount": "/home /boot",
     "configs": "base",
     "configs_install": [

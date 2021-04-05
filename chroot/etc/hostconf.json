@@ -1,7 +1,7 @@
 {
     "kernel": "tomato",
     "chroot": "base",
-    "chroot_killall": "gpg-agent scdaemon xclip wl-copy",
+    "chroot_killall": "gpg-agent scdaemon wl-copy",
     "configs": "base chroot",
     "configs_install": [
         "chmod 440 etc/sudoers",
