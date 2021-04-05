@@ -60,9 +60,9 @@
     ],
     "buildorder_exceptions": [
         ["binutils", "gcc"],
-        ["freetype", "harfbuzz"],
         ["gmp", "gcc"],
-        ["util-linux", "systemd"]
+        ["util-linux", "systemd"],
+        ["freetype", "harfbuzz"]
     ],
     "worker_cleanups": [
         ".cache",
