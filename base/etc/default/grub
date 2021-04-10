@@ -1,6 +1,6 @@
 # GRUB boot loader configuration
 
-GRUB_DEFAULT=0
+GRUB_DEFAULT=1
 GRUB_TIMEOUT=5
 GRUB_CMDLINE_LINUX_DEFAULT="ro quiet consoleblank=600 snd-hda-intel.enable=0,1"
 GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda1:root"
