@@ -58,7 +58,7 @@
         "gif",
         "cmake"
     ],
-    "buildorder_exceptions": [
+    "circular_dependencies": [
         ["binutils", "gcc"],
         ["gmp", "gcc"],
         ["util-linux", "systemd"],

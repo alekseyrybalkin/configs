@@ -58,7 +58,7 @@
         "gif",
         "cmake"
     ],
-    "buildorder_exceptions": [
+    "circular_dependencies": [
     ],
     "worker_cleanups": [
         ".cache",
