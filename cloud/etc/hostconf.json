@@ -4,7 +4,9 @@
     "configs_after_install": [
         "cloud-genfirewall",
         "python -m mr.util.arch_addons",
-        "systemctl daemon-reload"
+        "systemctl daemon-reload",
+        "newaliases",
+        "postmap /etc/postfix/transport"
     ],
     "firewall_manager": "aleksey"
 }
