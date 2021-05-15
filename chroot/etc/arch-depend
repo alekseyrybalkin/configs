@@ -103,9 +103,11 @@ depend = wl-clipboard
 depend = webkit2gtk
 depend = swayidle
 depend = swaylock
+depend = grim
 depend = xdg-desktop-portal
 depend = xdg-desktop-portal-wlr
 depend = pipewire-media-session
+depend = slurp
 
 # dev
 depend = ccache
