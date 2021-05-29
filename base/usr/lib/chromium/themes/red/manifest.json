@@ -1,0 +1,12 @@
+{
+    "manifest_version":2,
+    "theme": {
+        "colors":{
+            "frame_incognito":[140,11,54],
+            "frame":[140,11,54]
+        }
+    },
+    "name":"red",
+    "version":"1",
+    "description":""
+}
