@@ -3,5 +3,6 @@
 
 # <file system> <dir> <type> <options> <dump> <pass>
 # UUID=0b2942a2-7e02-4a5c-9374-a0962f95b03f
-/dev/sda            	/         	ext4      	rw,relatime,data=ordered	0 1
-/dev/sdb              none          swap      defaults              0      0
+/dev/sda                                        /               ext4    rw,relatime,data=ordered        0   1
+/dev/sdb                                        none            swap    defaults                        0   0
+/dev/disk/by-id/scsi-0Linode_Volume_archive1    /mnt/archive1   ext4    defaults,noatime,nofail         0   2
