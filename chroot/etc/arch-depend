@@ -84,6 +84,7 @@ depend = ttf-dejavu
 depend = ack
 depend = chrony
 depend = evince
+depend = qpdf
 depend = git-crypt
 depend = w3m
 depend = linux-firmware
