@@ -1,7 +1,4 @@
 # replaced by custom packages
-provides = libdevmapper.so
-provides = libdevmapper-event.so
-provides = device-mapper
 provides = which
 
 # base
