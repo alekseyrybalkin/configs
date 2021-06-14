@@ -68,9 +68,6 @@ depend = bc
 # for building initramfs
 depend = cpio
 
-# for building device-mapper
-depend = libaio
-
 # for building tllist, fcft and foot
 depend = meson
 depend = scdoc
