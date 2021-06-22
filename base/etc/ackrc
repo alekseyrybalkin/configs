@@ -454,8 +454,9 @@
 # https://yaml.org/
 --type-add=yaml:ext:yaml,yml
 
-# .data
+# .data, .http.cache
 --ignore-directory=is:.data
+--ignore-directory=is:.http.cache
 
 # archives
 --ignore-file=ext:gz
