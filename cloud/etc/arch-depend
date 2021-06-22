@@ -60,7 +60,6 @@ depend = man-pages
 depend = mc
 depend = tmux
 depend = vim
-depend = kitty-terminfo
 depend = ldns
 
 # dev
