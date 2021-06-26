@@ -1,0 +1,11 @@
+[Unit]
+Description=seatd
+
+[Service]
+User=root
+Group=root
+ExecStart=/usr/bin/seatd -u rybalkin -g rybalkin
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
