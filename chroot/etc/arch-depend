@@ -1,6 +1,6 @@
 # replaced by custom packages
-provides = libdevmapper.so
-provides = libdevmapper-event.so
+provides = libdevmapper.so=1.02-64
+provides = libdevmapper-event.so=1.02-64
 provides = device-mapper
 provides = which
 
