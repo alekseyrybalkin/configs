@@ -117,6 +117,7 @@ depend = python-whoosh
 depend = python-bottle
 depend = sdl2_ttf
 depend = sdl2_gfx
+depend = go
 
 # telenoti deps
 depend = python-pysocks
