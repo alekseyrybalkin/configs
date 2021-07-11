@@ -79,8 +79,8 @@ depend = meson
 depend = scdoc
 
 # used directly
-depend = ttf-ubuntu-font-family
 depend = ttf-dejavu
+depend = ttf-liberation
 depend = ack
 depend = chrony
 depend = evince
