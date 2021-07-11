@@ -79,7 +79,6 @@ depend = meson
 depend = scdoc
 
 # used directly
-depend = ttf-dejavu
 depend = ttf-liberation
 depend = ack
 depend = chrony
