@@ -1,0 +1,9 @@
+[Unit]
+Description=sys-devices
+
+[Service]
+Type=oneshot
+ExecStart=/usr/lib/sys-devices/sys-devices.sh
+
+[Install]
+WantedBy=multi-user.target
